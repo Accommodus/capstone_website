@@ -1,6 +1,6 @@
 AUTHOR = 'Cannon Whitney'
 SITENAME = 'Machine Learning in your Life'
-SITEURL = 'lifeml.web.app'
+SITEURL = 'https://lifeml.web.app'
 
 THEME = "theme"
 
