@@ -1,0 +1,21 @@
+[debug] [2023-01-06T03:49:12.103Z] ----------------------------------------------------------------------
+[debug] [2023-01-06T03:49:12.105Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\canno\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-06T03:49:12.106Z] CLI Version:   11.20.0
+[debug] [2023-01-06T03:49:12.106Z] Platform:      win32
+[debug] [2023-01-06T03:49:12.106Z] Node Version:  v18.12.1
+[debug] [2023-01-06T03:49:12.107Z] Time:          Thu Jan 05 2023 21:49:12 GMT-0600 (Central Standard Time)
+[debug] [2023-01-06T03:49:12.107Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-06T03:49:12.116Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-06T03:49:12.116Z] > authorizing via signed-in user (cannonteaguewhitney8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\canno\capstone_website
+

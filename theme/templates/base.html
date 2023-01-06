@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Information</title>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
+</head>
+<body>
+    <header class="bg-[url('{% if page_name in ['index'] %}{{ SITEURL }}/theme/images/index_bg.png{% endif %}')] bg-fixed bg-center" )>
+        <ul class="grid grid-cols-1 gap-4 py-32 px-10">
+          <li><h1 class="p-4 text-4xl font-bold lg:text-6xl">
+            {% if page_name in ['index'] %}
+                Machine Learning in your Life
+            {% else %} 
+                {{ article.Title }} 
+            {% endif %}
+          </h1></li>
+          <li><p class="rounded-lg bg-opacity-70 bg-blue-400 p-4 text-center text-lg font-semibold lg:text-2xl xl:text-5xl">
+            {% if page_name in ['index'] %}
+                empowering you to harness the power of new machine learning technology in your everyday life
+            {% else %} 
+                {{ article.Caption }} 
+            {% endif %}
+          </p></li>
+        </ul>
+    </header>
+    <div class="bg-blue-300">
+        {% block content %} {% endblock content %} 
+    </div>
+</body>
+</html>
