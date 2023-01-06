@@ -1,21 +1,45 @@
-[debug] [2023-01-06T03:49:12.103Z] ----------------------------------------------------------------------
-[debug] [2023-01-06T03:49:12.105Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\canno\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2023-01-06T03:49:12.106Z] CLI Version:   11.20.0
-[debug] [2023-01-06T03:49:12.106Z] Platform:      win32
-[debug] [2023-01-06T03:49:12.106Z] Node Version:  v18.12.1
-[debug] [2023-01-06T03:49:12.107Z] Time:          Thu Jan 05 2023 21:49:12 GMT-0600 (Central Standard Time)
-[debug] [2023-01-06T03:49:12.107Z] ----------------------------------------------------------------------
+[debug] [2023-01-06T03:57:07.058Z] ----------------------------------------------------------------------
+[debug] [2023-01-06T03:57:07.060Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\canno\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-01-06T03:57:07.060Z] CLI Version:   11.20.0
+[debug] [2023-01-06T03:57:07.061Z] Platform:      win32
+[debug] [2023-01-06T03:57:07.061Z] Node Version:  v18.12.1
+[debug] [2023-01-06T03:57:07.062Z] Time:          Thu Jan 05 2023 21:57:07 GMT-0600 (Central Standard Time)
+[debug] [2023-01-06T03:57:07.062Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-01-06T03:49:12.116Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-01-06T03:49:12.116Z] > authorizing via signed-in user (cannonteaguewhitney8@gmail.com)
+[debug] [2023-01-06T03:57:07.176Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-06T03:57:07.177Z] > authorizing via signed-in user (cannonteaguewhitney8@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-01-06T03:57:07.190Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-01-06T03:57:07.190Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-01-06T03:57:07.191Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-01-06T03:57:07.203Z] [hub] writing locator at C:\Users\canno\AppData\Local\Temp\hub-lifeml.json
+[debug] [2023-01-06T03:57:07.225Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/lifeml/sites 
+[debug] [2023-01-06T03:57:07.681Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/lifeml/sites 200
+[debug] [2023-01-06T03:57:07.681Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/lifeml/sites {"sites":[{"name":"projects/lifeml/sites/lifeml","defaultUrl":"https://lifeml.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-06T03:57:07.682Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lifeml/webApps/-/config [none]
+[debug] [2023-01-06T03:57:08.077Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lifeml/webApps/-/config 200
+[debug] [2023-01-06T03:57:08.077Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lifeml/webApps/-/config {"projectId":"lifeml","storageBucket":"lifeml.appspot.com","apiKey":"AIzaSyC4Xy0N3YuIlvAqrULaRui7BTHmDdlKzBQ","authDomain":"lifeml.firebaseapp.com","messagingSenderId":"889006839066"}
+[debug] [2023-01-06T03:57:08.103Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lifeml [none]
+[debug] [2023-01-06T03:57:08.434Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lifeml 200
+[debug] [2023-01-06T03:57:08.435Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lifeml {"projectId":"lifeml","projectNumber":"889006839066","displayName":"lifeml","name":"projects/lifeml","resources":{"hostingSite":"lifeml"},"state":"ACTIVE","etag":"1_27725276-c8b4-4d52-be50-1c459c473828"}
+[info] i  hosting[lifeml]: Serving hosting files from: output {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1moutput\u001b[22m"}}
+[info] +  hosting[lifeml]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
 [info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
 
-You're about to initialize a Firebase project in this directory:
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
 
-  C:\Users\canno\capstone_website
-
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [06/Jan/2023:03:57:18 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Jan/2023:03:57:18 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Jan/2023:03:57:18 +0000] "GET /theme/css/style.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Jan/2023:03:57:18 +0000] \"GET /theme/css/style.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [06/Jan/2023:03:57:18 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Jan/2023:03:57:18 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}

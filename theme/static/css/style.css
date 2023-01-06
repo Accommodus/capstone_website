@@ -517,6 +517,10 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.block {
+  display: block;
+}
+
 .grid {
   display: grid;
 }
@@ -629,6 +633,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .hover\:rounded-md:hover {
