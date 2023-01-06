@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="font-medium py-10 px-14 grid grid-cols-1 gap-5">
+    {{ article.content }}
+</div>
+
+<footer class="bg-blue-800 p-12 text-blue-300">
+    <a href="../" class="p-2 rounded-lg hover:text-slate-400">home</a>
+</footer>
+{% endblock content %}
